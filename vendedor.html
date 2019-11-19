@@ -19,8 +19,60 @@
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
       <title>Inicio</title>
   </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <!-- Header | Logo, Menu-->
+        <div class="logo">
+          <a href="Principal.html">
+            <img src="images/logo.png" alt="" height="72" width="156"/>
+          </a>
+        </div>
+        <div class="mainmenu">
+          <div id="mainmenu">
+            <ul class="sf-menu">
+              <li><a href="Principal.html" id="visited">Inicio</a></li>
+              <li><a href="Catalogo.html">Catalogo</a>
+                <ul>
+                  <li><a href="CatalogoEst.html">Estandar</a></li>
+                  <li><a href="CatalogoVel.html">De velocidad</a></li>
+                  <li><a href="CatalogoDep.html">Deportivas</a></li>
+                  <li><a href="CatalogoSco.html">Scooters</a></li>
+                  <li><a href="Catalogo4Mt.html">Cuatrimotos</a></li>
+                  <li><a href="CatalogoTT.html">Todo terreno</a></li>
+                </ul>
+              </li>
+              <li><a href="contacto.html">Contacto</a></li>
+              <li><a href="cuenta.html">Inicia sesión</a></li>
+              <li><a href="#">Regístrate</a>
+                <ul>
+                  <li><a href="vendedor.html">Vendedor</a></li>
+                  <li><a href="cliente.html">Cliente</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+          <!-- mainmenu ends here -->
 
-    <body>
+          <!-- Responsive Menu -->
+          <form id="responsive-menu" action="#" method="post">
+            <select>
+              <option value="">Navegacion</option>
+              <option value="Principal.html">Inicio</option>
+              <option value="Catalogo.html">Catalogo</option>
+              <option value="contact.html">Contact</option>
+              <option value="cuenta.html">Registrate</option>
+            </select>
+          </form>
+        </div>
+        <!-- mainmenu ends here -->
+      </div>
+      <!-- container ends here -->
+    </div>
+    <!-- header ends here -->
+    <br>
+    <hr class="separator1">
         <h1><b>Crear una cuenta</b></h1>
         <form action="vendedor1.php" method="post">
             <table>
