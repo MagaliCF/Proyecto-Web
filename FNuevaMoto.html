@@ -64,64 +64,72 @@
       <!-- container ends here -->
     </div>
     <!-- header ends here -->
-    <div class="">
-      <div class="">
-        <form class= action="FNM.php" method="post">
+      <div class="container">
+        <form class="" action="FNM.php" method="post">
           <fieldset>
             <legend>Agrega tu producto</legend>
             <tbody>
               <tr>
                 <td>
                   <br>
-                  Nombre
+                  <p>Nombre</p>
                   <input type="text" name="nombre" value="">
                 </td>
-              </tr>
-              <tr>
                 <td>
                   <br>
-                  Modelo
+                  <p>Modelo</p>
                   <input type="text" name="modelo" value="">
                 </td>
               </tr>
               <tr>
                 <td>
                   <br>
-                  Precio
+                  <p>Marca</p>
+                  <input type="text" name="Marca" value="">
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br>
+                  <p>Precio</p>
                   <input type="text" name="precio" value="">
                 </td>
               </tr>
               <tr>
                 <td>
                   <br>
-                  Color
+                  <p>Color</p>
                   <input type="text" name="color" value="">
                 </td>
               </tr>
               <tr>
                 <td>
                   <br>
-                  Descripcion
-                  <input type="text" name="desc" value="">
-                </td>
-              </tr>
-            </tbody>
-            <legend>Marca</legend>
-            <tbody>
-              <tr>
-                <td>
-                  <br>
-                  Nombre
-                  <input type="text" name="Marca" value="">
+                  <p>Descripcion</p>
+                  <textarea name="desc" style="width:500px; height:200px; ">
+                    Escribe la desccripcion del producto aqui
+                  </textarea>
                 </td>
               </tr>
               <br>
-              <button type="submit" name="button" id="boton">Agregar</button>
+              <tr>
+                <td>
+                  <br>
+                  <p>Imagen del producto</p>
+                  <input type="file" name="img" value="">
+                </td>
+              </tr>
+            </tr>
+            <br>
+            <tr>
+              <br>
+              <br>
+              <td><button type="submit" name="button" id="boton">Agregar</button></td>
+            </tr>
             </tbody>
           </fieldset>
         </form>
       </div>
-    </div>
     <!-- Footer ==================================================
     ================================================== -->
     <div class="footer">
