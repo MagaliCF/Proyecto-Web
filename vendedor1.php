@@ -54,8 +54,6 @@
 
             $conn->close();
 		?>
-
-        <p><a href="localhost/Proyecto-Web/login.php">Ir al perfil</a></p>
 				<!-- Socialize ==================================================
     ================================================== -->
     <hr class="separator2">
