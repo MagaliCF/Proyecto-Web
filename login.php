@@ -24,7 +24,7 @@
 			{
 				//Nuevo registro
 
-                $sql = "insert into cliente (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,forma_pago,password) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."','".$_POST["pago"]."','".$_POST["pass"]."')";
+              /*  $sql = "insert into cliente (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,forma_pago) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."','".$_POST["pago"]."')";
 
                 if($conn->query($sql) === TRUE)
                 {
@@ -36,7 +36,7 @@
                 }
             }
 
-            $conn->close();
+            $conn->close();*/
 		?>
 
         <p>Ir al perfil</p>
