@@ -17,7 +17,7 @@
       <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
       <!--Google Fonts-->
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-      <title>Inicio</title>
+      <title>Crea_cliente</title>
   </head>
   <body>
     <div id="header">
@@ -43,7 +43,7 @@
                 </ul>
               </li>
               <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="cuenta.html">Inicia sesión</a></li>
+              <li><a href="login.html">Inicia sesión</a></li>
               <li><a href="#">Regístrate</a>
                 <ul>
                   <li><a href="vendedor.html">Vendedor</a></li>

@@ -43,11 +43,11 @@
                 </ul>
               </li>
               <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="cuenta.html">Inicia sesión</a></li>
+              <li><a href="http://localhost/Proyecto-Web/login1.php">Inicia sesión</a></li>
               <li><a href="#">Regístrate</a>
                 <ul>
-                  <li><a href="vendedor.html">Vendedor</a></li>
-                  <li><a href="cliente.html">Cliente</a></li>
+                  <li><a href="http://localhost/Proyecto-Web/vendedor.php">Vendedor</a></li>
+                  <li><a href="http://localhost/Proyecto-Web/cliente.php">Cliente</a></li>
                 </ul>
               </li>
             </ul>
@@ -92,7 +92,8 @@
                 </tbody>
             </table>
             <br>
-            <input type="submit" name="enviar" id="boton">
+            </form>
+            <a href="http://localhost/Proyecto-Web/login.php"><input type="submit" name="enviar" id="boton"></a>
         </form>
         <!-- Socialize ==================================================
         ================================================== -->
