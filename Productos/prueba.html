@@ -17,7 +17,7 @@
       <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
       <!--Google Fonts-->
       <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-      <title>Inicio</title>
+      <title>$_POST["nombre"]</title>
   </head>
   <body>
     <div id="header">
@@ -77,6 +77,7 @@
         <section class="aboutoneleft">
           <h3>$_POST["nombre"]</h3>
           <p> $_POST["color"]</p>
+          <p>Precio:$ $_POST["precio"]</p>
           <p class="quote">$_POST["Desc"]</p>
         </section>
       </div>
@@ -86,6 +87,7 @@
           <h3>Marca y modelo</h3>
           <p>Marca: $_POST["Marca"]</p>
           <p class="quote">Modelo: $_POST["modelo"] </p>
+          <button type="button" name="button">Comprar</button>
         </section>
       </div>
       <!-- end one-third column ends here -->
