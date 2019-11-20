@@ -43,11 +43,12 @@
                 </ul>
               </li>
               <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="login.html">Inicia sesión</a></li>
+              <li><a href="login1.php">Inicia sesión</a></li>
               <li><a href="#">Regístrate</a>
                 <ul>
-                  <li><a href="vendedor.html">Vendedor</a></li>
-                  <li><a href="cliente.html">Cliente</a></li>
+                  <li><a href="vendedor.php">Vendedor</a></li>
+                  <li><a href="cliente.php">Cliente</a></li>
+                </ul>
                 </ul>
               </li>
             </ul>
