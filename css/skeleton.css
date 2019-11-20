@@ -1,27 +1,4 @@
-/*
-* Skeleton V1.1
-* Copyright 2011, Dave Gamache
-* www.getskeleton.com
-* Free to use under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-* 8/17/2011
-*/
-
-
-/* Table of Contents
-==================================================
-    #Base 960 Grid
-    #Tablet (Portrait)
-    #Mobile (Portrait)
-    #Mobile (Landscape)
-    #Clearing */
-
-
-
-/* #Base 960 Grid
-================================================== */
-
-    .container {
+  .container {
 	position: relative;
 	width: 960px;
 	margin: 0 auto;
@@ -361,8 +338,7 @@ width: 400px;
 	clear: both;
 	visibility: hidden;
 }
-/* Use clearfix class on parent to clear nested columns,
-    or wrap each row of columns in a <div class="row"> */
+
     .clearfix:before, .clearfix:after, .row:before, .row:after {
 	content: '\0020';
 	display: block;

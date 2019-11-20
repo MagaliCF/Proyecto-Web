@@ -1,4 +1,3 @@
-/****************************** MAIN STYLES - backgorund,deviders ******************************/
 
 /* Main Container */
 img, embed, object, video {
@@ -190,14 +189,6 @@ a:focus > .sf-sub-indicator, a:hover > .sf-sub-indicator, a:active > .sf-sub-ind
 .slider h1 {
 	color:#fff;
 }
-/*
- * jQuery FlexSlider v1.8
- * http://www.woothemes.com/flexslider/
- *
- * Copyright 2012 WooThemes
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
 
 /* Browser Resets */
 .flex-container a, .flexslider a, .flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus {
@@ -241,9 +232,7 @@ html[xmlns] .slides {
 * html .slides {
 	height: 1%;
 }
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
+
 .no-js .slides > li:first-child {
 	display: block;
 }
@@ -267,7 +256,6 @@ html[xmlns] .slides {
 	height: 85vh;
 
 }
-/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
 .flex-container {
 	zoom: 1;
 	position: relative;

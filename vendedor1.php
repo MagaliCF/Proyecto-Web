@@ -54,12 +54,11 @@
 
             $conn->close();
 		?>
-				<!-- Socialize ==================================================
+    <!-- Socialize ==================================================
     ================================================== -->
     <hr class="separator2">
     <div class="socialsblock">
       <div class="container socialize">
-        <h3>Socialize with us!</h3>
         <section class="socials">
           <ul class="socials">
             <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
@@ -73,6 +72,8 @@
       </div>
       <!-- container ends here -->
     </div>
+  </div>
+</div>
     <!-- socialsblock ends here -->
     <!-- Footer ==================================================
     ================================================== -->

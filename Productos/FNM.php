@@ -162,15 +162,14 @@ if(file_exists($nombre_archivo)){
       <hr class="separator2">
       <div class="socialsblock">
         <div class="container socialize">
-          <h3>Socialize with us!</h3>
           <section class="socials">
             <ul class="socials">
-              <li><a href="#"><img src="../images/socials/twitter.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/facebook.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/dribbble.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/google+.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/linkedin.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/youtube.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
             </ul>
           </section>
         </div>
@@ -369,15 +368,14 @@ else
       <hr class="separator2">
       <div class="socialsblock">
         <div class="container socialize">
-          <h3>Socialize with us!</h3>
           <section class="socials">
             <ul class="socials">
-              <li><a href="#"><img src="../images/socials/twitter.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/facebook.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/dribbble.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/google+.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/linkedin.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/youtube.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
             </ul>
           </section>
         </div>
