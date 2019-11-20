@@ -18,7 +18,7 @@ USE `Base_Proyecto` ;
 -- Table `Base_Proyecto`.`Marca`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Marca` (
-  `idMarca` INT NOT NULL,
+  `idMarca` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(20) NOT NULL,
   PRIMARY KEY (`idMarca`))
 ENGINE = InnoDB;
@@ -28,9 +28,9 @@ ENGINE = InnoDB;
 -- Table `Base_Proyecto`.`Modelo`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Modelo` (
-  `idModelo` INT NOT NULL,
+  `idModelo` INT NOT NULL AUTO_INCREMENT,
   `Nombre` VARCHAR(25) NOT NULL,
-  `Precio` DOUBLE NOT NULL,
+  `Precio` VARCHAR(25) NOT NULL,
   `Color` VARCHAR(10) NULL,
   `Descripcion` VARCHAR(45) NOT NULL,
   `Marca_idMarca` INT NOT NULL,
@@ -58,6 +58,7 @@ CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Vendedor` (
   `numero` INT NOT NULL,
   `alc_mun` VARCHAR(30) NOT NULL,
   `correo` VARCHAR(45) NOT NULL,
+  'password' VARCHAR(45) NOT NULL,
   PRIMARY KEY (`idVendedor`))
 ENGINE = InnoDB;
 
