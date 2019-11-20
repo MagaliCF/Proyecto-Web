@@ -1,13 +1,3 @@
-
-/**
- * Skeleton V1.1
- * Copyright 2011, Dave Gamache
- * www.getskeleton.com
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 8/17/2011
- */
-
 (function ($) {
   // hash change handler
   function hashchange () {
@@ -21,8 +11,6 @@
       content.show().addClass('active').siblings().hide().removeClass('active');
     }
   }
-
-  // listen on event and fire right away
   $(window).on('hashchange.skeleton', hashchange);
   hashchange();
   $(hashchange);

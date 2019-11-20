@@ -1,13 +1,14 @@
 <?php
   $servername="localhost";
   $username="root";
-  $password="";
+  $password="51423";
   $conn=new mysqli($servername,$username,$password);
   $vendedor=1;
+  $name=$_POST["nombre"];
   if($conn->connect_error){
     die("La conexion fallo: ".$conn->connect_error);
   }
-  $sql="use base_proyecto";
+  $sql="use Base_Proyecto";
   if(($conn->query($sql))===TRUE)
   {
     #checar si ya hay esta marca para no agregarla
@@ -24,7 +25,7 @@
     $aux1=mysqli_query($conn,$query);
     $aux3=mysqli_fetch_array($aux1, MYSQLI_BOTH);
     mysqli_free_result($aux1);
-    $sql="INSERT INTO Modelo(Nombre,Precio,Color,Descripcion,Marca_idMarca) VALUES('".$_POST["modelo"]."','".$_POST["precio"]."','".$_POST["color"]."','".$_POST["desc"]."','".$aux3[0]."')";
+    $sql="INSERT INTO Modelo(Nombre,Precio,Color,Descripcion,Marca_idMarca) VALUES('".$_POST["modelo"]."','".$_POST["precio"]."','".$_POST["color"]."','".$_POST["desc"]."','".$aux3."')";
     if(($conn->query($sql)) === TRUE){
       echo "<br>"."se agrego a modelo";
     }
@@ -37,8 +38,7 @@
     $aux4=mysqli_fetch_array($aux2, MYSQLI_BOTH);
     mysqli_free_result($aux2);
 
-    $sql="INSERT into Producto(Nombre,Vendedor_idVendedor)
-    values('".$_POST["nombre"]."','$vendedor')";
+    $sql="INSERT INTO Producto(Nombre,Vendedor_idVendedor) VALUES('".$_POST["nombre"]."',$vendedor)";
     if(($conn->query($sql)) === TRUE){
       echo "El producto fue agregado";
     }
@@ -48,7 +48,7 @@
 
   }
 #aqui empieza el codigo para automaticamente crear paginas de productos
-$nombre_archivo="$_POST[nombre].html";
+$nombre_archivo="$name.html";
 if(file_exists($nombre_archivo)){
   $mensaje = '<!DOCTYPE html>
   <html lang="en" dir="ltr">
@@ -162,15 +162,14 @@ if(file_exists($nombre_archivo)){
       <hr class="separator2">
       <div class="socialsblock">
         <div class="container socialize">
-          <h3>Socialize with us!</h3>
           <section class="socials">
             <ul class="socials">
-              <li><a href="#"><img src="../images/socials/twitter.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/facebook.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/dribbble.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/google+.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/linkedin.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/youtube.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
             </ul>
           </section>
         </div>
@@ -369,15 +368,14 @@ else
       <hr class="separator2">
       <div class="socialsblock">
         <div class="container socialize">
-          <h3>Socialize with us!</h3>
           <section class="socials">
             <ul class="socials">
-              <li><a href="#"><img src="../images/socials/twitter.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/facebook.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/dribbble.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/google+.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/linkedin.png" alt="" /></a></li>
-              <li><a href="#"><img src="../images/socials/youtube.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+              <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
             </ul>
           </section>
         </div>

@@ -138,25 +138,26 @@
             <input type="submit" name="enviar" id="boton">
         </form>
         <!-- Socialize ==================================================
-    ================================================== -->
-    <hr class="separator2">
-    <div class="socialsblock">
-      <div class="container socialize">
-        <h3>Socialize with us!</h3>
-        <section class="socials">
-          <ul class="socials">
-            <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
-            <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
-          </ul>
-        </section>
+        ================================================== -->
+        <hr class="separator2">
+        <div class="socialsblock">
+          <div class="container socialize">
+            <section class="socials">
+              <ul class="socials">
+                <li><a href="#"><img src="images/socials/twitter.png" alt="" /></a></li>
+                <li><a href="#"><img src="images/socials/facebook.png" alt="" /></a></li>
+                <li><a href="#"><img src="images/socials/dribbble.png" alt="" /></a></li>
+                <li><a href="#"><img src="images/socials/google+.png" alt="" /></a></li>
+                <li><a href="#"><img src="images/socials/linkedin.png" alt="" /></a></li>
+                <li><a href="#"><img src="images/socials/youtube.png" alt="" /></a></li>
+              </ul>
+            </section>
+          </div>
+          <!-- container ends here -->
+        </div>
       </div>
-      <!-- container ends here -->
     </div>
-    <!-- socialsblock ends here -->
+        <!-- socialsblock ends here -->
     <!-- Footer ==================================================
     ================================================== -->
     <div class="footer">
