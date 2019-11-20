@@ -39,6 +39,6 @@
             $conn->close();
 		?>
 
-        <p>Ir al perfil</p>
+        <p><a href="localhost/Proyecto-Web/login">Ir al perfil</a></p>
 	</body>
 </html>
