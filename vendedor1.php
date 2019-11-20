@@ -9,21 +9,21 @@
 			$servername="localhost";
 			$username="root";
 			$password="";
-                
+
 			$conn = new mysqli($servername,$username,$password);
-			
+
 			if($conn->connect_error)
 			{
 				die("La conexion fallo: ". $conn->connect_error);
 			}
 			//Cambia base de Datos
-			
+
 			$sql = "use base_proyecto";
-			
+
 			if($conn->query($sql) === TRUE)
 			{
-				//Nuevo registro			
-        
+				//Nuevo registro
+
                 $sql = "insert into vendedor (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."')";
 
                 if($conn->query($sql) === TRUE)
@@ -38,7 +38,7 @@
 
             $conn->close();
 		?>
-        
-        <p>Ir al perfil</p>
+
+        <p><a href="localhost/Proyecto-Web/login">Ir al perfil</a></p>
 	</body>
 </html>

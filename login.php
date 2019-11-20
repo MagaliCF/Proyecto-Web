@@ -22,21 +22,10 @@
 
 			if($conn->query($sql) === TRUE)
 			{
-				//Nuevo registro
+				printf("Algo salió mal :(");
+      }
 
-              /*  $sql = "insert into cliente (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,forma_pago) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."','".$_POST["pago"]."')";
-
-                if($conn->query($sql) === TRUE)
-                {
-                    echo "<br>"."Ahora ya puedes disfrutar de nuestros servicios";
-                }
-
-                else{
-                    echo "Error: ". $sql . "<br>" . $conn->error;
-                }
-            }
-
-            $conn->close();*/
+            $conn->close();
 		?>
 
         <p>Ir al perfil</p>
