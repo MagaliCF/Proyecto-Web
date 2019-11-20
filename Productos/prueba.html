@@ -69,7 +69,6 @@
         <!-- mainmenu ends here -->
       </div>
       <!-- container ends here -->
-    </div>
     <!-- header ends here -->
     <!-- About us ==================================================
     ================================================== -->
@@ -78,23 +77,22 @@
         <section class="aboutoneleft">
           <h3>$_POST["nombre"]</h3>
           <p> $_POST["color"]</p>
-          <p class="quote">mas caracteristicas</p>
+          <p class="quote">$_POST["Desc"]</p>
         </section>
       </div>
       <!-- end one-third column ends here -->
       <div class="one_third">
         <section class="aboutonecenter">
           <h3>Marca y modelo</h3>
-          <p>Marca:  </p>
-          <p class="quote">Modelo: </p>
+          <p>Marca: $_POST["Marca"]</p>
+          <p class="quote">Modelo: $_POST["modelo"] </p>
         </section>
       </div>
       <!-- end one-third column ends here -->
       <div class="one_third lastcolumn">
         <section class="aboutoneright">
           <h3>imagen</h3>
-          <img src="../images/catalogo/M1.jpg" alt=""/>
-          <p class="quote">Etiam eget mi enim, non ultricies nisi voluptatem, illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo nemo enim ipsam voluptatem. </p>
+          <img src="../images/catalogo/$_POST["nombre"].jpg" alt=""/>
         </section>
       </div>
       <!-- end one-third column ends here -->
