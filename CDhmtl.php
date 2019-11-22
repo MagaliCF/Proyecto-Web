@@ -46,7 +46,12 @@
                     </ul>
                   </li>
                   <li><a href="contacto.html">Contacto</a></li>
-                  <li><a href="login1.php">Inicia sesión</a></li>
+                  <li><a href="#">Inicia sesión</a>
+                    <ul>
+                      <li><a href="logv.php">Vendedor</a></li>
+                      <li><a href="logc.php">Cliente</a></li>
+                    </ul>
+                  </li>
                   <li><a href="#">Regístrate</a>
                     <ul>
                       <li><a href="vendedor.php">Vendedor</a></li>
