@@ -20,43 +20,6 @@
       <title>Inicia-sesion</title>
   </head>
   <body>
-    <div id="header">
-      <div class="container">
-        <div class="logo">
-          <a href="Principal.html">
-            <img src="images/logo.png" alt="" height="72" width="156"/>
-          </a>
-        </div>
-        <div class="mainmenu">
-          <div id="mainmenu">
-            <ul class="sf-menu">
-              <li><a href="Principal.html" id="visited">Inicio</a></li>
-              <li><a href="Catalogo.html">Catalogo</a>
-                <ul>
-                  <li><a href="CatalogoEst.html">Estandar</a></li>
-                  <li><a href="CatalogoDep.html">Deportivas</a></li>
-                  <li><a href="CatalogoVel.html">Megascooters</a></li>
-                  <li><a href="CatalogoSco.html">Scooters</a></li>
-                  <li><a href="Catalogo4Mt.html">Cuatrimotos</a></li>
-                  <li><a href="CatalogoTT.html">Todo terreno</a></li>
-                </ul>
-              </li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="#">Inicia sesión</a>
-                <ul>
-                  <li><a href="logv.php">Vendedor</a></li>
-                  <li><a href="logc.php">Cliente</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Regístrate</a>
-                <ul>
-                  <li><a href="vendedor.php">Vendedor</a></li>
-                  <li><a href="cliente.php">Cliente</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
           <!-- mainmenu ends here -->
           <!-- Responsive Menu -->
 <?php  /*$nombre = $_POST["username"];
@@ -117,7 +80,7 @@ if (isset($_COOKIE['COOKIE_INDEFINED_SESSION'])) {
         $fila2=mysqli_fetch_array($resultado2);
         $id=$fila["password"];
 
-        if (!$fila['password']){
+        if (!$fila['id_usuario']){
           echo "<br>Datos Incorrectos";
         }
         else {
