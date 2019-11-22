@@ -80,7 +80,7 @@
     <br>
     <hr class="separator1">
         <h1><b>INICIA SESIÓN</b></h1>
-        <form action="logv1.php" method="post">
+        <form action="logc1.php" method="post">
             <table>
                 <tbody>
                     <tr>
