@@ -4,7 +4,12 @@
   $password="51423";
   $conn=new mysqli($servername,$username,$password);
   $vendedor=1;
-  $name=$_POST["nombre"];
+  $nombre=$_POST["nombre"];
+  $modelo=$_POST["modelo"];
+  $marca=$_POST["Marca"];
+  $precio=$_POST["precio"];
+  $color=$_POST["color"];
+  $desc=$_POST["desc"];
   if($conn->connect_error){
     die("La conexion fallo: ".$conn->connect_error);
   }
@@ -13,7 +18,7 @@
   {
     #checar si ya hay esta marca para no agregarla
     #$idR=rand();
-    $sql="INSERT INTO Marca(Nombre) VALUES('".$_POST["Marca"]."')";
+    $sql="INSERT INTO Marca(idMarca,Nombre) VALUES('0','$marca')";
     if (($conn->query($sql))===TRUE) {
       echo "se agrego marca";
     }
@@ -21,11 +26,12 @@
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
     #checar este codigo de arriba
-    $query ="SELECT idMarca FROM Marca WHERE Nombre='".$_POST["Marca"]."'";
+    $query ="SELECT idMarca FROM Marca WHERE Nombre='$marca'";
     $aux1=mysqli_query($conn,$query);
     $aux3=mysqli_fetch_array($aux1, MYSQLI_BOTH);
     mysqli_free_result($aux1);
-    $sql="INSERT INTO Modelo(Nombre,Precio,Color,Descripcion,Marca_idMarca) VALUES('".$_POST["modelo"]."','".$_POST["precio"]."','".$_POST["color"]."','".$_POST["desc"]."','".$aux3."')";
+    $sql="INSERT INTO Modelo(idModelo,Nombre,Precio,Color,Descripcion,Marca_idMarca)
+    VALUES('0','$modelo','$precio','$precio','$desc',$aux3)";
     if(($conn->query($sql)) === TRUE){
       echo "<br>"."se agrego a modelo";
     }
@@ -33,22 +39,26 @@
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
     #$vendedor=$_COOKIE['COOKIE_DATA_INDEFINED_SESSION']['idVendedor'];
-    $query = "SELECT idModelo FROM Modelo WHERE Nombre='".$_POST["modelo"]."'";
+    /*
+    $query = "SELECT idModelo FROM Modelo WHERE Nombre='$modelo'";
     $aux2==mysqli_query($conn,$query);
     $aux4=mysqli_fetch_array($aux2, MYSQLI_BOTH);
     mysqli_free_result($aux2);
-
-    $sql="INSERT INTO Producto(Nombre,Vendedor_idVendedor) VALUES('".$_POST["nombre"]."',$vendedor)";
+    $sql="INSERT INTO Producto(idProducto,Nombre,Modelo_idModelo,Modelo_Marca_idMarca,Vendedor_idVendedor)
+    VALUES('0','$nombre','$aux4','$aux3','$vendedor')";
     if(($conn->query($sql)) === TRUE){
       echo "El producto fue agregado";
     }
     else{
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
+    */
 
   }
+
 #aqui empieza el codigo para automaticamente crear paginas de productos
-$nombre_archivo="$name.html";
+/*
+$nombre_archivo="$nombre.html";
 if(file_exists($nombre_archivo)){
   $mensaje = '<!DOCTYPE html>
   <html lang="en" dir="ltr">
@@ -475,6 +485,7 @@ if($archivo = fopen($nombre_archivo, "a"))
 
   fclose($archivo);
 }
+*/
 #aqui termina el creador de paginas
   $conn->close();
 ?>
