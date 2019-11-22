@@ -74,26 +74,27 @@
     <!-- header ends here -->
     <br>
     <hr class="separator1">
-        <h1><b>INICIA SESIÓN</b></h1>
-        <form action="logv1.php" method="post">
-            <table>
-                <tbody>
-                    <tr>
-                        <td>Correo:</td>
-                        <td>&nbsp; </td>
-                        <td>&nbsp; </td>
-                        <td><input type="text" name="correo"></td>
-                    </tr>
-                    <tr>
-                        <td>Contraseña:</td>
-                        <td>&nbsp; </td>
-                        <td>&nbsp; </td>
-                        <td><input type="password" name="pass"></td>
-                    </tr>
-                </tbody>
-            <br>
-            <input type="submit" name="enviar" id="boton">
-        </form>
+    <div class="">
+      <h1><b>INICIA SESIÓN</b></h1>
+      <form action="logv1.php" method="post">
+              <tbody>
+                  <tr>
+                      <td>Correo:</td>
+                      <td>&nbsp; </td>
+                      <td>&nbsp; </td>
+                      <td><input type="text" name="correo"></td>
+                  </tr>
+                  <tr>
+                      <td>Contraseña:</td>
+                      <td>&nbsp; </td>
+                      <td>&nbsp; </td>
+                      <td><input type="password" name="pass"></td>
+                  </tr>
+              </tbody>
+          <br>
+          <input type="submit" name="enviar" id="boton">
+      </form>
+    </div>
         <!-- Socialize ==================================================
         ================================================== -->
         <hr class="separator2">
