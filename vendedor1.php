@@ -39,7 +39,7 @@
 			{
 				//Nuevo registro
 
-                $sql = "insert into vendedor (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."')";
+                $sql = "insert into vendedor (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,password) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."','".$_POST["pass"]."')";
 
                 if($conn->query($sql) === TRUE)
                 {

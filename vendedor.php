@@ -132,6 +132,12 @@
                         <td>&nbsp; </td>
                         <td><input type="email" name="correo"></td>
                     </tr>
+                    <tr>
+                        <td>Contraseña:</td>
+                        <td>&nbsp; </td>
+                        <td>&nbsp; </td>
+                        <td><input type="password" name="pass"></td>
+                    </tr>
                 </tbody>
             </table>
             <br>
