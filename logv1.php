@@ -50,18 +50,36 @@ if (isset($_COOKIE['COOKIE_INDEFINED_SESSION'])) {
       if(isset($usuario)){
         //Consultar si los datos son están guardados en la base de datos
         $consulta= "SELECT * FROM vendedor WHERE correo='$usuario' AND password='$contrasenia'";
-        $resultado= mysqli_query($conn,$consulta) or die (mysqli_error($conexion));
+        $resultado= mysqli_query($conn,$consulta) or die (mysqli_error($conn));
         $fila=mysqli_fetch_array($resultado);
         $consulta2="SELECT `password` FROM vendedor WHERE correo='$usuario' AND password='$contrasenia'";
         $resultado2= mysqli_query($conn,$consulta2) or die (mysqli_error($conn));
         $fila2=mysqli_fetch_array($resultado2);
         $id=$fila["password"];
+
         if (!$fila['id_usuario']){
           echo "<br>Datos Incorrectos";
         }
-
-      }
-  }
-
+        //OPCIÓN 2: Usuario logueado correctamente
+        else{
+          switch($id){
+              case 1:
+                header('Location: http://citasmedicas1/Usuario_Paciente.php');
+            	   break;
+            	case 2:
+            	 header('Location: http://citasmedicas1/Usuario_Medico.php');
+            	  break;
+            	case 3:
+            	 header('Location: http://citasmedicas1/Usuario_Laboratorista.php');
+            	  break;
+              case 4:
+                header('Location:http://citasmedicas1/Usuario_Secretaria.php');
+                break;
+              case 5:
+                header('Location: http://citasmedicas1/Usuario_Admin.php');
+                break;
+            }
+          }
+        }
         $conn->close();
 ?>
