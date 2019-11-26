@@ -48,7 +48,7 @@ if (isset($_COOKIE['COOKIE_INDEFINED_SESSION'])) {
 }*/
   $servername="localhost";
   $username="root";
-  $password="";
+  $password="51423";
 
   $conn = new mysqli($servername,$username,$password);
 

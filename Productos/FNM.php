@@ -1,19 +1,24 @@
 <?php
   $servername="localhost";
   $username="root";
-  $password="51423";
+  $password="";
   $conn=new mysqli($servername,$username,$password);
   $vendedor=1;
-  $name=$_POST["nombre"];
+  $nombre=$_POST["nombre"];
+  $modelo=$_POST["modelo"];
+  $marca=$_POST["Marca"];
+  $precio=$_POST["precio"];
+  $color=$_POST["color"];
+  $desc=$_POST["desc"];
   if($conn->connect_error){
     die("La conexion fallo: ".$conn->connect_error);
   }
-  $sql="use Base_Proyecto";
+  $sql="use base_proyecto";
   if(($conn->query($sql))===TRUE)
   {
     #checar si ya hay esta marca para no agregarla
     #$idR=rand();
-    $sql="INSERT INTO Marca(Nombre) VALUES('".$_POST["Marca"]."')";
+    $sql="INSERT INTO Marca(idMarca,Nombre) VALUES('0','$marca')";
     if (($conn->query($sql))===TRUE) {
       echo "se agrego marca";
     }
@@ -21,24 +26,27 @@
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
     #checar este codigo de arriba
-    $query ="SELECT idMarca FROM Marca WHERE Nombre='".$_POST["Marca"]."'";
+    $query ="SELECT idMarca FROM Marca WHERE Nombre='$marca'";
     $aux1=mysqli_query($conn,$query);
     $aux3=mysqli_fetch_array($aux1, MYSQLI_BOTH);
+    $aux3=(int)$aux3;
     mysqli_free_result($aux1);
-    $sql="INSERT INTO Modelo(Nombre,Precio,Color,Descripcion,Marca_idMarca) VALUES('".$_POST["modelo"]."','".$_POST["precio"]."','".$_POST["color"]."','".$_POST["desc"]."','".$aux3."')";
+    $sql="INSERT INTO Modelo(idModelo,Nombre,Precio,Color,Descripcion,Marca_idMarca)
+    VALUES('0','$modelo','$precio','$precio','$desc','$aux3')";
     if(($conn->query($sql)) === TRUE){
       echo "<br>"."se agrego a modelo";
     }
     else{
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
-    #$vendedor=$_COOKIE['COOKIE_DATA_INDEFINED_SESSION']['idVendedor'];
-    $query = "SELECT idModelo FROM Modelo WHERE Nombre='".$_POST["modelo"]."'";
+    #$vendedor=$_COOKIE['COOKIE_DATA_INDEFINED_SESSION']['idVendedor']
+    $query = "SELECT idModelo FROM Modelo WHERE Nombre='$modelo'";
     $aux2==mysqli_query($conn,$query);
     $aux4=mysqli_fetch_array($aux2, MYSQLI_BOTH);
+    $aux4=(int)$aux4;
     mysqli_free_result($aux2);
-
-    $sql="INSERT INTO Producto(Nombre,Vendedor_idVendedor) VALUES('".$_POST["nombre"]."',$vendedor)";
+    $sql="INSERT INTO Producto(Nombre,Modelo_idModelo,Modelo_Marca_idMarca,Vendedor_idVendedor)
+    VALUES('$nombre','$aux3','$aux3','$vendedor')";
     if(($conn->query($sql)) === TRUE){
       echo "El producto fue agregado";
     }
@@ -46,9 +54,11 @@
       echo "Error: ". $sql . "<br>" . $conn->error;
     }
 
+
   }
+
 #aqui empieza el codigo para automaticamente crear paginas de productos
-$nombre_archivo="$name.html";
+$nombre_archivo="$nombre.html";
 if(file_exists($nombre_archivo)){
   $mensaje = '<!DOCTYPE html>
   <html lang="en" dir="ltr">
@@ -69,7 +79,7 @@ if(file_exists($nombre_archivo)){
         <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
         <!--Google Fonts-->
         <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
-        <title>$_POST["nombre"]</title>
+        <title>$nombre</title>
     </head>
     <body>
       <div id="header">
@@ -129,18 +139,18 @@ if(file_exists($nombre_archivo)){
         <div class="one_third">
           <form class="" action="compra.php" method="post">
           <section class="aboutoneleft">
-            <h3>$_POST["nombre"]</h3>
-            <p> $_POST["color"]</p>
-            <p>Precio:$ $_POST["precio"]</p>
-            <p class="quote">$_POST["Desc"]</p>
+            <h3> $nombre </h3>
+            <p> $color </p>
+            <p> $precio </p>
+            <p class="quote"> $desc </p>
           </section>
         </div>
         <!-- end one-third column ends here -->
         <div class="one_third">
           <section class="aboutonecenter">
             <h3>Marca y modelo</h3>
-            <p>Marca: $_POST["Marca"]</p>
-            <p class="quote">Modelo: $_POST["modelo"] </p>
+            <p>Marca: $marca </p>
+            <p class="quote">Modelo: $modelo </p>
             <button type="submit" name="button">Comprar</button>
           </section>
         </div>
@@ -148,7 +158,7 @@ if(file_exists($nombre_archivo)){
         <div class="one_third lastcolumn">
           <section class="aboutoneright">
             <h3>imagen</h3>
-            <img src="../images/catalogo/$_POST["nombre"].jpg" alt=""/>
+            <img src="../images/catalogo/$nombre.jpg" alt=""/>
           </section>
         </div>
         <!-- end one-third column ends here -->
@@ -275,7 +285,7 @@ else
         <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png">
         <!--Google Fonts-->
         <link href="http://fonts.googleapis.com/css?family=Oswald:400,300,700" rel="stylesheet" type="text/css">
-        <title>$_POST["nombre"]</title>
+        <title>$nombre</title>
     </head>
     <body>
       <div id="header">
@@ -335,18 +345,18 @@ else
         <div class="one_third">
           <form class="" action="compra.php" method="post">
           <section class="aboutoneleft">
-            <h3>$_POST["nombre"]</h3>
-            <p> $_POST["color"]</p>
-            <p>Precio:$ $_POST["precio"]</p>
-            <p class="quote">$_POST["Desc"]</p>
+            <h3> $nombre </h3>
+            <p> $color </p>
+            <p> $precio </p>
+            <p class="quote"> $desc </p>
           </section>
         </div>
         <!-- end one-third column ends here -->
         <div class="one_third">
           <section class="aboutonecenter">
             <h3>Marca y modelo</h3>
-            <p>Marca: $_POST["Marca"]</p>
-            <p class="quote">Modelo: $_POST["modelo"] </p>
+            <p>Marca: $marca </p>
+            <p class="quote">Modelo: $modelo </p>
             <button type="submit" name="button">Comprar</button>
           </section>
         </div>
@@ -354,7 +364,7 @@ else
         <div class="one_third lastcolumn">
           <section class="aboutoneright">
             <h3>imagen</h3>
-            <img src="../images/catalogo/$_POST["nombre"].jpg" alt=""/>
+            <img src="../images/catalogo/$nombre.jpg" alt=""/>
           </section>
         </div>
         <!-- end one-third column ends here -->
@@ -466,7 +476,7 @@ if($archivo = fopen($nombre_archivo, "a"))
   if(
     fwrite($archivo,$mensaje. "\n"))
   {
-    echo "Se ha ejecutado correctamente";
+    echo "Se ha creado la pagina";
   }
   else
   {

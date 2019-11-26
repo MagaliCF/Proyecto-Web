@@ -32,7 +32,7 @@ CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Modelo` (
   `Nombre` VARCHAR(25) NOT NULL,
   `Precio` VARCHAR(25) NOT NULL,
   `Color` VARCHAR(10) NULL,
-  `Descripcion` VARCHAR(45) NOT NULL,
+  `Descripcion` VARCHAR(100) NOT NULL,
   `Marca_idMarca` INT NOT NULL,
   PRIMARY KEY (`idModelo`, `Marca_idMarca`),
   INDEX `fk_Modelo_Marca_idx` (`Marca_idMarca` ASC) VISIBLE,
@@ -58,7 +58,7 @@ CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Vendedor` (
   `numero` INT NOT NULL,
   `alc_mun` VARCHAR(30) NOT NULL,
   `correo` VARCHAR(45) NOT NULL,
-  'password' VARCHAR(45) NOT NULL,
+  `Password` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`idVendedor`))
 ENGINE = InnoDB;
 
@@ -103,6 +103,7 @@ CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Cliente` (
   `alc_mun` VARCHAR(30) NOT NULL,
   `correo` VARCHAR(45) NOT NULL,
   `forma_pago` VARCHAR(10) NOT NULL,
+  `Password` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`idCliente`))
 ENGINE = InnoDB;
 
@@ -116,6 +117,7 @@ CREATE TABLE IF NOT EXISTS `Base_Proyecto`.`Admin` (
   `apPat` VARCHAR(15) NOT NULL,
   `apMat` VARCHAR(15) NULL,
   `Producto_idProducto` INT NOT NULL,
+  `Password` VARCHAR(25) NOT NULL,
   PRIMARY KEY (`idAdmin`),
   INDEX `fk_Admin_Producto1_idx` (`Producto_idProducto` ASC) VISIBLE,
   CONSTRAINT `fk_Admin_Producto1`
