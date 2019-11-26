@@ -476,7 +476,7 @@ if($archivo = fopen($nombre_archivo, "a"))
   if(
     fwrite($archivo,$mensaje. "\n"))
   {
-    echo "Se ha ejecutado correctamente";
+    echo "Se ha creado la pagina";
   }
   else
   {
@@ -485,7 +485,6 @@ if($archivo = fopen($nombre_archivo, "a"))
 
   fclose($archivo);
 }
-*/
 #aqui termina el creador de paginas
   $conn->close();
 ?>
