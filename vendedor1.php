@@ -98,7 +98,7 @@
 				//Nuevo registro
 
                 $sql = "insert into vendedor (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,password) values ('".$_POST["nombre"]."','".$_POST["apellidoP"]."','".$_POST["apellidoM"]."','".$_POST["telefono"]."','".$_POST["colonia"]."','".$_POST["calle"]."','".$_POST["numero"]."','".$_POST["alc_mun"]."','".$_POST["correo"]."','".$_POST["pass"]."')";
-
+#('prueba','ap','am','12345','cp','clp','ncp','alcp','correo@a.com','pass')
                 if($conn->query($sql) === TRUE)
                 {
                     echo "<br>"."Ahora ya puedes disfrutar de nuestros servicios";
