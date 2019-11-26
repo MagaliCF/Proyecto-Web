@@ -1,7 +1,7 @@
 <?php
   $servername="localhost";
   $username="root";
-  $password="51423";
+  $password="";
   $conn=new mysqli($servername,$username,$password);
   $vendedor=1;
   $nombre=$_POST["nombre"];
@@ -13,7 +13,7 @@
   if($conn->connect_error){
     die("La conexion fallo: ".$conn->connect_error);
   }
-  $sql="use Base_Proyecto";
+  $sql="use base_proyecto";
   if(($conn->query($sql))===TRUE)
   {
     #checar si ya hay esta marca para no agregarla
