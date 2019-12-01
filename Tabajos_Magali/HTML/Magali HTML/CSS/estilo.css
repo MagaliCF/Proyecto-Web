@@ -1,0 +1,213 @@
+body { 
+    margin : 0;
+   font-family: 'Nunito', sans-serif;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between; 
+    /*alinea el contenido de la etiqueta y las diferentes maneras de hacerlo son:
+    flex-start: Posiciona el texto al inicio de la pantalla
+    flex-end: Posiciona el texto al final de la pantalla
+    center: Centra el texto en la pantalla
+    space-between: Deja el mismo espacio entre las etiquetas (pegado a las orillas)
+    space-around: Mismo espacio a los lados de la etiquetas*/  
+}
+
+header ul{
+    display: flex;
+}
+
+header ul  li{
+    list-style: none;
+    margin-right: 15px;
+}
+
+a{
+    text-decoration: none; /*Quita el subrayado de vínculo*/
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;/*Centra el elemento*/
+}
+
+.contenedor img{
+    width: 90%;
+}
+
+.contenedor .texto,
+.contenedor .codigo{
+    width: 49%;
+}
+
+header{
+    background: linear-gradient(rgba(198,136,216,.9), rgba(226,146,230,.9)), 
+    url(../img/fondo1.jpg);/*Es un degradado lineal sobre la imagen*/
+    height: 100vh; /*alto de encabezado*/
+    background-size: cover; /*Adapta la imagen a la pantalla*/
+}
+
+#contenedor-titulo-flex{
+    max-width: 1580px;/*El ancho máximo que el elemento puede tener*/
+    display: flex;/*Pone el texto en linea*/
+    justify-content: center;
+    margin: 18vh 0;
+    width: 100%;
+    
+}
+
+h1{
+    font-size: 25px;/*Tamaño de la fuente*/
+    color: #fff;/*Color de texto*/
+}
+
+h2{
+    font-size: 25px;
+    color: #fff;
+    text-align: center;/*Alineación del texto*/
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a, 
+#sobre-mi a,
+#blog a,
+#que-esperas a,
+#contacto input[type = "submit"]{
+    font-size: 14px;
+    color: #fff;
+    background: #f754ef;
+    padding: 14px 24px;/*Margen interior*/
+    width: 128px;
+    display: inline-block;
+}
+
+p.logo{
+    color: #fff;
+    font-size: 20px;        
+}
+
+nav ul li a{
+    color: #fff;
+}
+
+/*SECCIÓN SOBRE MI*/
+
+h3{
+    text-align: center;
+    font-size: 55px;
+    font-weight: normal;
+}
+
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre.mi .texto{
+    width: 42%;
+}
+
+/*SECCIÓN SERVICIOS*/
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{
+    margin-bottom: 20px;
+    height: 194px;
+}
+
+.contenedor-servicios .violeta{
+    background: linear-gradient(to top, #bb7ecc, #c688d8);
+    box-shadow: 0 12px 30px 0 rgba(114, 31, 204, .2);
+}
+
+.contenedor-servicios .celeste{
+    background: linear-gradient(to top, #e37bb4, #d98bb5);
+    box-shadow: 0 12px 30px 0 rgba(240, 175, 210, .9);
+}
+
+.ondas{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.icono{
+    float: right;
+}
+
+/*SECCIÓN MIS TRABAJOS*/
+
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+
+span{
+    color: #71bcfa;
+}
+
+#mis-trabajos p{
+    text-align: left;
+    color: #000;
+}
+
+/*SECCIÓN POR QUÉ TRABAJAR CONMIGO*/
+
+#por-que-trabajar video{
+    margin:0 10px; 
+}
+
+.contenedor-trabajar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#por-que-trabajar .item{
+    width:  28%;
+    text-align: center;
+    list-style: none;
+}
+
+#por-que-trabajar ul li: nth-child(2){
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+
+#por-que-trabajar ul li: nth-child(3){
+    line-height: 31px;
+}
+
+#por-que-trabajar img{
+    width: 20%;
+}
+
+#por-que-trabajar ul li{
+    list-style: none;
+}

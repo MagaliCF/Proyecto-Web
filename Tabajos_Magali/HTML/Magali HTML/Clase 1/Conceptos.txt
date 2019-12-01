@@ -1,0 +1,3 @@
+Maquetar: Crear carpetas para llevor un orden de los archivos para la página web
+Etiqueta div
+*Solo debe existir un header y un footer

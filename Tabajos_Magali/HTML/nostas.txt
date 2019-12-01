@@ -1,0 +1,6 @@
+insert into cliente (nombre,apPat,apMat,telefono,colonia,calle,numero,alc_mun,correo,forma_pago) values ("Magali","Castillo","Flores","1234567890","Granjas Valle Gpe","Filiberto Gomez",145,"Ecatepec","magali@gmail.com","Gratisv:"); 
+delete from cliente where idCliente = 1; 	//Auto_increment
+
+delete from vendedor where idVendedor = 1;	//Borrar por fila
+
+ALTER TABLE vendedor AUTO_INCREMENT = 1;	//Reiniciar contador
