@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+     <head>
+        <meta charset = "utf-8">
+        <title>Adivinanzas</title>
+    </head>
+
+    <body>
+        <p>No es cama ni es leon, y desaparece en cualquier rincon.</p>
+
+        <button onclick="myFunction()">Respuesta...</button>
+        <p id = "demo"></p>
+        <script>
+            function myFunction(){
+                var i;
+                for(i=1; i<=2; i++){
+                    var x = prompt("Escribe tu respuesta con solo una palabra", "");
+                    if(x == "camaleon"){
+                        document.getElementById("demo").innerHTML = "¡Muy bien! c:"
+                        break;
+                    }
+                    else{
+                       document.getElementById("demo").innerHTML = "Inténtalo de nuevo :c. Pasa a la siguiente adivinanza"
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>

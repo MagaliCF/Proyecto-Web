@@ -1,0 +1,81 @@
+#myHeader{
+    background-color:gray;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+#mynav{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+header li{
+    text-align: center;
+    float: left;
+}
+
+header li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+header li a:hover{
+    background-color: #ff0000;
+}
+
+header li a:focus{
+    background-color: #0000ff;
+}
+
+#obj{
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+section ol { counter-reset: item }
+section li{ display: block }
+section li:before { content: counters(item, ".") " "; counter-increment: item }
+footer {
+  background-color: #666699;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+article {
+  float: right;
+  padding: 0px;
+  width: 75%;
+  background-color: #ccccff;
+}
+nav {
+  float: left;
+  width: 20%;
+  background: #9999ff;
+  padding: 0px;
+}
+header {
+  background-color: #660066;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
