@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>getElement</title>
+    </head>
+    
+    <body>
+        <p id = "demo">Haga clic en el botón para cambiar el texto en este párrafo</p>
+        <button onclick="myFunction()">clic</button>
+        <script>
+            function myFunction(){
+                document.getElementById("demo").innerHTML = myFunction2();
+                    
+            }
+            
+            function myFunction2(){
+                document.write("Saludos, espero que tengas un buen día.");
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+     <head>
+        <meta charset = "utf-8">
+        <title>Adivinanzas</title>
+    </head>
+    
+    <body>
+        <p>Con sólo 3 colores ordeno a cada uno. Si todos me respetan no habrá accidente alguno.</p>
+        
+        <button onclick="myFunction()">Respuesta...</button>
+        <p id = "demo"></p>
+        <script>
+            function myFunction(){
+                var i;
+                for(i=1; i<=2; i++){
+                    var x = prompt("Escribe tu respuesta con solo una palabra", "");
+                    if(x == "semaforo"){
+                        document.getElementById("demo").innerHTML = "¡Muy bien! c:"
+                        break;
+                    }
+                    else{
+                       document.getElementById("demo").innerHTML = "Inténtalo de nuevo :c. Pasa a la siguiente adivinanza"
+                    }
+                }
+            }
+        </script>
+        
+        <!--p>Mar te digo y no me entiendes mar te repito y no me comprendes. ¿Qué será?</p>
+        
+        <button onclick="myFunction1()">Respuesta...</button>
+        <p id = "demo1"></p>
+        <script>
+            function myFunction1(){
+                var i;
+                for(i=1; i<=2; i++){
+                    var x = prompt("Escribe tu respuesta con solo una palabra", "");
+                    if(x == "Marte"){
+                        document.getElementById("demo1").innerHTML = "¡Muy bien! c:"
+                        break;
+                    }
+                    else{
+                       document.getElementById("demo1").innerHTML = "Inténtalo de nuevo :c. Pasa a la siguiente adivinanza"
+                    }
+                }
+            }
+        </script>  
+        
+        <p>No hay ningún día del año en que pueda descansar, en tu pecho cantando ando, con mi rítmico tic-tac.</p>
+        
+        <button onclick="myFunction2()">Respuesta...</button>
+        <p id = "demo2"></p>
+        <script>
+            function myFunction2(){
+                var i;
+                for(i=1; i<=2; i++){
+                    var x = prompt("Escribe tu respuesta con solo una palabra", "");
+                    if(x == "corazon"){
+                        document.getElementById("demo2").innerHTML = "¡Muy bien! c:"
+                        break;
+                    }
+                    else{
+                       document.getElementById("demo2").innerHTML = "Inténtalo de nuevo :c. Pasa a la siguiente adivinanza"
+                    }
+                }
+            }
+        </script-->  
+        
+    </body>
+</html>

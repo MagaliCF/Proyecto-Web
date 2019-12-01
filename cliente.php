@@ -79,6 +79,7 @@
     <!-- header ends here -->
     <br>
     <hr class="separator1">
+    <div class="sesion">
         <h1><b>Crear una cuenta</b></h1>
         <form action="cliente1.php" method="post">
             <table>
@@ -154,6 +155,7 @@
             <br>
             <input type="submit" name="enviar" id="boton">
         </form>
+      </div>
         <!-- Socialize ==================================================
         ================================================== -->
         <hr class="separator2">

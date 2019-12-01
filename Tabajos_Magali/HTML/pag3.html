@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Proyecto</title>
+    <style>
+        ol { 
+            counter-reset: item; 
+        }
+        
+        li { 
+          display: block;
+        }
+        
+        li:before { 
+          content: counters(item, ".") ". "; 
+          counter-increment: item;
+        }
+        
+        a{
+            text-decoration: none; /*Quita el subrayado de vínculo*/
+        }
+
+        ol li a{
+            color: #000;
+        }
+        
+        ol li a:focus{
+            color: #D93310;
+        }
+    </style>
+</head>
+<body>
+    <header> 
+        <br>
+        <ol>
+            <li> HTML
+                <ol> 
+                    <li><a href="pagFormato.html" target="contenido">Mi tema</a></li>
+                    <li><a href="../HTML/div/practica4.html" target="contenido">Mi tema (div)</a></li>
+                    <li><a href="../HTML/div/practica2.html" target="contenido">Mi tema (div y span)</a></li>
+                    <li><a href="../HTML/div/practica3.html" target="contenido">Ejercicio div 1</a></li>
+                    <li><a href="../HTML/div/practica5A.html" target="contenido">Ejercicio div 3</a></li>
+                    <li><a href="../HTML/div/practica5B.html" target="contenido">Ejercicio div 4</a></li>
+                    <li><a href="../HTML/div/practica5C.html" target="contenido">Ejercicio div 5</a></li>
+                    <li><a href="../HTML/div/practica5G.html" target="contenido">Ejercicio div 6</a></li>
+                    <li><a href="520919/video/video.html" target="contenido">Multimedia</a></li>
+                    <li><a href="map2.html" target="contenido">Map</a></li>
+                </ol> <!--end lista-->
+            </li>
+            <li>Listas
+                <ol>
+                    <li><a href="../HTML/listas/lista1.html" target="contenido">Ejercicio lista 1</a></li>
+                    <li><a href="../HTML/listas/lista2.html" target="contenido">Ejercicio lista 2</a></li>
+                    <li><a href="../HTML/listas/listas.html" target="contenido">Ejercicio lista 3</a></li>
+                    <li><a href="../HTML/listas/lista3.html" target="contenido">Ejercicio lista 4</a></li>
+                </ol>
+            </li>
+            <li>CSS
+                <ol>
+                    <li><a href="../HTML/css/formoid.html" target="contenido">Datos personales (Formoid)</a></li>
+                    <li><a href="../HTML/css/formulario1a.html" target="contenido">Contacto</a></li>
+                </ol>
+            </li>
+            <li>Formularios
+                <ol>
+                    <li><a href="Formulario/forms.html" target="contenido">Guía de formulario</a></li>
+                    <li><a href="Formulario/curriculum.html" target="contenido">Curriculum</a></li>
+                </ol>
+            </li>
+            <li>Tablas
+                <ol>
+                    <li><a href="Tablas/tablam1.html" target="contenido">Tabla 1</a></li>
+                    <li><a href="Tablas/tablaNum2.html" target="contenido">Tabla 2</a></li>
+                    <li><a href="Tablas/tabla3.html" target="contenido">Tabla 3</a></li>
+                    <li><a href="Tablas/tabla2.html" target="contenido">Tabla ejemplo 1</a></li>
+                    <li><a href="Tablas/tabla.html" target="contenido">Tabla ejemplo 2</a></li>
+                    <li><a href="Tablas/practica5D.html" target="contenido">Ejercicio tabla 1</a></li>
+                    <li><a href="Tablas/practica5E.html" target="contenido">Ejercicio tabla 2</a></li>
+                    <li><a href="Tablas/practica5F.html" target="contenido">Ejercicio tabla 3</a></li>
+                    <li><a href="Tablas/tabla_cult.html" target="contenido">Tabla cultural</a></li>
+                </ol>
+            </li>
+            <li>JavaScript
+                <ol>
+                    <li><a href="js/javascript.html" target="contenido">Mi primer progrma en Js</a></li>
+                    <li><a href="js/Jscript1.html" target="contenido">Caracteres especiales</a></li>
+                    <li><a href="js/Jscript2.html" target="contenido">Arrays</a></li>
+                    <li><a href="js/tablasmult.html" target="contenido">Tablas de multiplicar</a></li>
+                    <li><a href="js/Jscript1.html" target="contenido">Caracteres especiales</a></li>
+                    <li><a href="js/numeros.html" target="contenido">Numeros a letras</a></li>
+                    <li><a href="520919/piramide/piramide.html" target="contenido">Pirámide</a></li>
+                    <li><a href="520919/piramide/piramiden.html" target="contenido">Pirámide n pisos</a></li>
+                    <li><a href="520919/boton.html" target="contenido">Saludo sin valoracion</a></li>
+                    <li><a href="520919/saludo_valoracion.html" target="contenido">Saludo con valoracion</a></li>
+                    <li><a href="520919/cambiar_parrafo.html" target="contenido">Cambiar párrafo</a></li>
+                </ol>
+            </li>
+            <li>PHP
+                <ol>
+                    <li><a href="http://localhost/Web/e1151019.php"target="contenido">Información PHP</a></li>
+                    <li><a href="http://localhost/Web/Php1.php" target="contenido">Bienvenida PHP</a></li>
+                    <li><a href="http://localhost/Web/Php2.php"target="contenido">Saludo, fecha y hora</a></li>
+                    <li><a href="http://localhost/Web/e2151019.php"target="contenido">Parrafo</a></li>
+                    <li><a href="http://localhost/Web/e4151019.php"target="contenido">Suma</a></li>
+                    <li><a href="http://localhost/Web/e5151019.php"target="contenido">Operadores de PHP</a></li>
+                    <li><a href="http://localhost/Web/e6151019.php"target="contenido">Mas operadores de PHP</a></li>
+                    <li><a href="http://localhost/Web/curriculum.php"target="contenido">Curriculum</a></li>
+                    <li><a href="http://localhost/Web/piramiden.php"target="contenido">Pirámide</a></li>
+                </ol>
+            </li>
+        </ol>
+	</header>
+</body>
+</html>

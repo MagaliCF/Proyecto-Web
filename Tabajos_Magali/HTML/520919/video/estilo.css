@@ -1,0 +1,35 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: 'Raleway', sans-serif;
+	background:  linear-gradient(rgba(198,136,216,.2), rgba(90, 145, 221,.2)),url(imagen1.jpg);
+}
+
+#primero, #segundo, #tercero{
+	padding: 1.25em 2%;
+	margin: 0.4em 0;
+}
+
+#primero img{
+	width: 50%;
+    display:block;
+    margin:auto;
+}
+
+p{
+    font-size: 24px;
+    text-align: center;
+}
+
+#segundo video{
+	width: 50%;
+    display:block;
+    margin:auto;
+}
+
+#tercero audio{
+	width: 50%;
+    display:block;
+    margin:auto;
+}
