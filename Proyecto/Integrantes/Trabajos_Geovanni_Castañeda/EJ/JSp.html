@@ -1,0 +1,72 @@
+<html>
+    <head>
+       <tittle>JavaScript</tittle>
+        <style type="text/css">
+            .p{
+                background: #492f63;
+                color: #FFFAF0;
+                font-size: 16px;
+                font-family: Arial;
+                align-content: center;
+            }
+            .text1{
+                background: #3b6f96;
+                color: #FFFAF0;
+                font-size: 16px;
+                font-family: Verdana;
+            }
+            .text3{
+                background: #000000;
+                color: #FFFAF0;
+                font-size: 16px;
+                font-family: Calibri;
+            }
+        </style>
+    </head>
+    <body class="p">
+        <h1 class="text1">Caracteres Especiales</h1>
+        <script language="JavaScript">
+            var cad1="\"Geovanni \n Castañeda Beltran \"";
+            var cad2="gio.cb@gmail.com";
+            var cad3="\\\xBE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \x23 \\\"A28";
+            var cad4="\xBD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \xA9\x23\"2\"";
+            var cad5="\u00AE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; \xA9";
+            document.writeln("<p>"+cad1+"</p>");
+            document.writeln("<p>"+cad2+"</p>");
+            document.writeln("<p>"+cad3+"</p>");
+            document.writeln("<p>"+cad4+"</p>");
+            document.writeln("<p>"+cad5+"</p>");
+        </script>
+        <h1 class="text1">Tablas de multiplicar JavaScript</h1>
+        <hr>
+        <table border="2" class="text2">
+        <script language="JavaScript">
+            for(var p1=1;p1<=10;p1++){
+                document.write("<tr>");
+                for(var p2=1;p2<=10;p2++){
+                    var res=p1*p2;
+                    document.write("<td>"+p1+"*"+p2+"="+res);
+                }
+                document.write("</tr>");
+            }
+        </script>
+        </table>
+        <h1 class="text1">Arrays 1JS</h1>
+        <script language="JavaScript">
+            function MostrarMSJ(){
+                var a,b,c,d,etexto;
+                a=3;b=5;c=true;d=false;etexto='1';
+                document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+                 document.write();
+            }
+            MostrarMSJ();
+        </script>
+    </body>
+</html>

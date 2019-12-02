@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>getElementValoracion</title>
+    </head>
+    
+    <body>
+        <p>Haga clic para mostrar la pregunta</p>
+        <button onclick="myFunction()">clic</button>
+        <p id = "demo"></p>
+        <script>
+            function myFunction(){
+                var person = prompt("Escribe tu nombre", "");
+                if(person != ""){
+                    document.getElementById("demo").innerHTML = "Hola "+person+". ¿Cómo estás?"
+                }
+                else{
+                   document.getElementById("demo").innerHTML = "Inténtalo de nuevo :c"
+                }
+            }
+        </script>   
+    </body>
+</html>
